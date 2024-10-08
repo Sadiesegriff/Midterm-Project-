@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 148.0, 87.0, 1746.0, 873.0 ],
+		"rect" : [ 81.0, 87.0, 1271.0, 848.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,86 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 605.0, 145.0, 150.0, 33.0 ],
+					"text" : "scale for input and output match "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-26",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 846.0, 341.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-25",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 532.0, 193.5, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "Macintosh HD:/Users/s_segrif/Desktop/IMG_2050.mov",
+								"filename" : "IMG_2050.mov",
+								"filekind" : "moviefile",
+								"id" : "u742009126",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+ ]
+					}
+,
+					"drawto" : "",
+					"id" : "obj-13",
+					"loop" : 3,
+					"maxclass" : "jit.playlist",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_gl_texture", "", "dictionary" ],
+					"output_texture" : 1,
+					"parameter_enable" : 0,
+					"patching_rect" : [ 42.0, 464.0, 150.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 610.0, 191.0, 90.0, 22.0 ],
+					"text" : "scale 0 1 0 127"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"enable" : 1,
 					"fps" : 30.0,
@@ -82,7 +162,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 910.0, 248.0, 150.0, 33.0 ],
+					"patching_rect" : [ 1003.0, 180.0, 150.0, 33.0 ],
 					"text" : "open will show where audio is coming from "
 				}
 
@@ -94,7 +174,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 699.0, 125.0, 35.0, 22.0 ],
+					"patching_rect" : [ 959.0, 163.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -107,7 +187,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 582.0, 65.0, 20.0, 20.0 ]
+					"patching_rect" : [ 842.0, 103.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -120,7 +200,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 582.0, 102.0, 50.0, 21.0 ],
+					"patching_rect" : [ 842.0, 140.0, 50.0, 21.0 ],
 					"text" : "local $1"
 				}
 
@@ -133,7 +213,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 628.0, 184.0, 34.0, 19.0 ],
+					"patching_rect" : [ 888.0, 222.0, 34.0, 19.0 ],
 					"text" : "Ch 2"
 				}
 
@@ -147,7 +227,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 582.0, 205.0, 15.0, 62.0 ],
+					"patching_rect" : [ 842.0, 243.0, 15.0, 62.0 ],
 					"tepidcolor" : [ 0.6, 0.729412, 0.0, 1.0 ],
 					"warmcolor" : [ 0.85098, 0.85098, 0.0, 1.0 ]
 				}
@@ -162,7 +242,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 608.0, 205.0, 15.0, 62.0 ],
+					"patching_rect" : [ 868.0, 243.0, 15.0, 62.0 ],
 					"tepidcolor" : [ 0.6, 0.729412, 0.0, 1.0 ],
 					"warmcolor" : [ 0.85098, 0.85098, 0.0, 1.0 ]
 				}
@@ -177,7 +257,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 699.0, 205.0, 15.0, 62.0 ],
+					"patching_rect" : [ 959.0, 243.0, 15.0, 62.0 ],
 					"tepidcolor" : [ 0.6, 0.729412, 0.0, 1.0 ],
 					"warmcolor" : [ 0.85098, 0.85098, 0.0, 1.0 ]
 				}
@@ -192,7 +272,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 678.0, 205.0, 15.0, 62.0 ],
+					"patching_rect" : [ 938.0, 243.0, 15.0, 62.0 ],
 					"tepidcolor" : [ 0.6, 0.729412, 0.0, 1.0 ],
 					"warmcolor" : [ 0.85098, 0.85098, 0.0, 1.0 ]
 				}
@@ -206,7 +286,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 677.0, 92.0, 20.0, 20.0 ]
+					"patching_rect" : [ 937.0, 130.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -219,7 +299,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 677.0, 170.0, 40.0, 21.0 ],
+					"patching_rect" : [ 937.0, 208.0, 40.0, 21.0 ],
 					"text" : "adc~"
 				}
 
@@ -232,7 +312,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 582.0, 144.0, 45.0, 45.0 ]
+					"patching_rect" : [ 842.0, 182.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -244,7 +324,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 538.0, 184.0, 34.0, 19.0 ],
+					"patching_rect" : [ 798.0, 222.0, 34.0, 19.0 ],
 					"text" : "Ch 1"
 				}
 
@@ -307,7 +387,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 310.0, 228.0, 62.0, 113.0 ]
+					"patching_rect" : [ 610.0, 222.0, 62.0, 113.0 ]
 				}
 
 			}
@@ -398,6 +478,30 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"order" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"order" : 1,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"midpoints" : [ 51.5, 504.0, 198.0, 504.0, 198.0, 465.0, 212.5, 465.0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"midpoints" : [ 248.5, 406.0, 212.5, 406.0 ],
 					"source" : [ "obj-14", 0 ]
@@ -442,7 +546,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 319.5, 382.0, 253.0, 382.0, 253.0, 415.0, 212.5, 415.0 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -458,8 +561,24 @@
 				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"hidden" : 1,
-					"midpoints" : [ 591.5, 140.5, 591.5, 140.5 ],
+					"midpoints" : [ 851.5, 178.5, 851.5, 178.5 ],
 					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"order" : 0,
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -501,7 +620,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 319.5, 415.0, 212.5, 415.0 ],
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -521,7 +639,14 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "IMG_2050.mov",
+				"bootpath" : "~/Desktop",
+				"patcherrelativepath" : ".",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 
